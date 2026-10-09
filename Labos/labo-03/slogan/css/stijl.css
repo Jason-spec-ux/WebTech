@@ -30,6 +30,7 @@ span::after{
     background-color: var(--geel);
     bottom: 0;
     left: 0;
+    border-radius: 0.0 50% 50%;
 }
 
 p{
