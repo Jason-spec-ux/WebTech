@@ -18,7 +18,6 @@ body{
 h1{
     max-width: 15rem;
     background-color: yellow;
-    box-shadow:  black ;
     border-bottom: none;
     font-size: 20px;
     height: 3rem;
@@ -26,6 +25,9 @@ h1{
     justify-content: center;
     display: flex;
     flex-direction: column;
+    box-shadow: -8px 8px 0 #000;
+    border: 4px solid black;
+
 }
 h2{
     width: 35rem;
@@ -36,8 +38,6 @@ h2{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    box-shadow:black 5px solid ;
     border-top: 4px solid;
-
-    
+    box-shadow: -8px 8px 0 #000, 8px 8px 0 #000;
 }

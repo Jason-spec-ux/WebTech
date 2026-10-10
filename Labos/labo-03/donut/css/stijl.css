@@ -15,6 +15,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
+    border: 5px solid black;
 }
 main{
     height: 90vh;
@@ -26,22 +27,28 @@ main{
     align-items: center;
     justify-content: center;
     display: flex;
+    position: absolute;
+    border: 10px solid black;
+
 }
 div{
     background-color: var(--paars);
     border-radius: 50%;
-    height: 70%;
-    width: 70%;
+    height: 65%;
+    width: 65%;
+    position: absolute;
+    overflow: hidden;
+    border: 10px solid black;
 
 }
 h1{
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     background-color: var(--geel);
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
-    overflow: visible;
-    
+    position: absolute;
+    font-size: 500%;
 }
