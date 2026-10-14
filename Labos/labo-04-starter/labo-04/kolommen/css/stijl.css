@@ -1,0 +1,48 @@
+/* stijl.css - labo 4, kolommen (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+    --turquoise: darkturquoise;
+    --violet: darkviolet;
+    --blue: deepskyblue;
+    --gap: 3rem;
+}
+
+/* === your rules === */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: var(--gap);
+    min-height: 100vh;
+    padding: var(--gap);
+}
+
+main div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+main  div:nth-child(1) {
+    background-color: var(--turquoise);
+}
+
+main  div:nth-child(2) {
+    background-color: var(--violet);
+}
+
+main  div:nth-child(3) {
+    background-color: var(--blue);
+}
