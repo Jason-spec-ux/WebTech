@@ -26,7 +26,7 @@ body{
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(3,1fr);
     border: 2px solid black;
-    width: 70vw;
+    width: 70vh;
     height: 70vh;
     gap: 2vh;
     padding: 2vh;

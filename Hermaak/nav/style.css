@@ -1,0 +1,16 @@
+/* stijl.css - labo 4, navigatie (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+--balk: #1f3a2e;
+--tekst: #f3efe6;
+--accent: #e6b53c;
+}
+
+/* === your rules === */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
