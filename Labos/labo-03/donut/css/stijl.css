@@ -1,54 +1,48 @@
 /* stijl.css - labo 3, donut (reset.css is linked before this file) */
 
 /* === tokens === */
+
+
+/* === your rules === */
 :root {
     --oranje: #ec4b03;
     --paars: #b99ec1;
     --geel: #f9b700;
 }
-
-/* === your rules === */
-
 body{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
     height: 100vh;
-    border: 5px solid black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 main{
-    height: 90vh;
     width: 90vh;
-    background-color: var(--oranje);
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    border: 3rem black solid;
-    align-items: center;
+    height: 90vh;
+    border: 1rem solid black;
     justify-content: center;
+    align-items: center;
     display: flex;
-    position: absolute;
-    border: 10px solid black;
-
+    background-color: var(--oranje);
 }
 div{
     background-color: var(--paars);
+    width: 60%;
+    height: 60%;
     border-radius: 50%;
-    height: 65%;
-    width: 65%;
-    position: absolute;
+    align-items: flex-start;
+    display: flex;
+    border: 1rem solid black;
+    flex-direction: column;
     overflow: hidden;
-    border: 10px solid black;
-
 }
 h1{
-    width: 80%;
-    height: 80%;
-    background-color: var(--geel);
     justify-content: center;
     align-items: center;
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    font-size: 500%;
+    background-color: var(--geel);
+     width: 80%;
+    height: 80%;
+    font-size: 5rem;
+    border: solid black;
+    border-width: 0 1rem 1rem 0;
 }
