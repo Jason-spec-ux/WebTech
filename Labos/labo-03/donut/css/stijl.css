@@ -18,7 +18,7 @@ body{
 main{
     width: 90vh;
     height: 90vh;
-    border: 1rem solid black;
+    border: 0.5rem solid black;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -31,7 +31,7 @@ div{
     border-radius: 50%;
     align-items: flex-start;
     display: flex;
-    border: 1rem solid black;
+    border: 0.5rem solid black;
     flex-direction: column;
     overflow: hidden;
 }
@@ -42,7 +42,7 @@ h1{
     background-color: var(--geel);
      width: 80%;
     height: 80%;
-    font-size: 5rem;
+    font-size: 2rem;
     border: solid black;
-    border-width: 0 1rem 1rem 0;
+    border-width: 0 0.5rem 0.5rem 0;
 }
