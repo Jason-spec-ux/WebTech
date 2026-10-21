@@ -1,0 +1,14 @@
+body{
+}
+body{
+    display: grid;
+    height: 100vh;
+    gap: 2rem;
+    background-color: red;
+}
+@media(min-width: 1080px)
+{
+    body{
+        background-color: green;
+    }
+}
