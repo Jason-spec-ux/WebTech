@@ -2,7 +2,50 @@
 
 /* === tokens === */
 :root {
-
+  --blauw: #1e5bd8;
+  --roze: #e88bb4;
+  --rood: #c51f2a;
+  --oranje: #d98c1a;
+  --groen: #3b7a2a;
+  --salie: #8fb89a;
+  --paars: #7b4fa3;
+  --grijs: #6b6b6b;
 }
 
 /* === your rules === */
+body{
+    width: 100%;
+    padding: 1rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.citaten{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+
+}
+.citaat{
+    width: 18rem;
+    box-sizing: border-box;
+    border-left: 0.5rem solid;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+cite{
+     margin-top: auto;         
+    font-weight: normal;      
+    font-style: normal;       
+    font-size: 0.875rem;
+}
+.citaat.blauw  { color: var(--blauw); }
+.citaat.roze   { color: var(--roze); }
+.citaat.rood   { color: var(--rood); }
+.citaat.oranje { color: var(--oranje); }
+.citaat.groen  { color: var(--groen); }
+.citaat.salie  { color: var(--salie); }
+.citaat.paars  { color: var(--paars); }
+.citaat.grijs  { color: var(--grijs); }
