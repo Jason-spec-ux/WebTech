@@ -18,8 +18,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--papier);
 }
 header{
+    height: 3.5rem;
     width: 100%;
     background-color: var(--balk);
     display: flex;
@@ -29,9 +31,9 @@ header{
     position: sticky;
     top: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0 2rem 0 2rem;
 }
 .logo{
-    padding-left: 2rem;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -44,18 +46,23 @@ ul{
     flex-direction: row;
     gap: 2rem;
     list-style: none;
-    padding:  0.5rem 1rem 0.5rem  0.5rem ;
+    text-transform: uppercase;
 }
-li a{
+ul li a{
     color: var(--gedempt);
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.05rem;
 }
-li a:hover{
+ol li a{
+    color: var(--inkt);
+    font-size: 0.75rem;
+    letter-spacing: 0.05rem;
+}
+a:hover{
     color: var(--link-actief);
-
 }
-li a:active{
+a:active{
     color: var(--link-actief);
 }
 main{
@@ -63,4 +70,26 @@ main{
     flex-direction: column;
     width: 44rem;
     justify-content: left;
+    padding: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+section{
+    margin-top: 3rem;
+}
+h1, h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.75rem;
+}
+footer{
+    background-color: black;
+    color: var(--footer-tekst);
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
 }
