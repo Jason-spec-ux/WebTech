@@ -92,10 +92,10 @@ aside{
 .badge{
   position: absolute;
   z-index: 2000;
-  padding: 0.40rem 1rem;
+  padding: 0.20rem 0.5rem;
   background-color: var(--accent);
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 1rem;
+  right: 1rem;
   border-radius: 0.8rem;
   color: white;
   font-size: 0.75rem;
