@@ -2,9 +2,110 @@
 
 /* === tokens === */
 :root {
+  --pagina: #1d1d1b;
+  --affiche: #2554ab;
+  --affiche-tekst: #fff8ee;
 
+  --geel: #ffc83d;
+  --rood: #d6341c;
+  --wit: #fff;
+  --donker: #1d1d1b;
+
+  --font-kop: Georgia, serif;
+
+  --sticker: clamp(4rem, 14vw, 7rem);
 }
 
 /* === base: narrow screens first === */
+@media(min-width:400px)
+{
+    * {
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: var(--pagina);
+    height: 100vh;
+}
+.affiche{
+    width: min(35rem, 100% - 2rem);
+    aspect-ratio: 3 / 4;
+    margin: 2rem auto;
+    position: relative;
+    background-color: var(--affiche);
+    color: var(--affiche-tekst);
+    padding: clamp(1.5rem, 6vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+}
+
+.affiche h1{
+    margin: 0;
+    font-family: var(--font-kop);
+    font-size: clamp(3rem, 8vw, 2rem);
+    line-height: 1.05;
+}
+
+.ondertitel{
+    margin: 0;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.sticker{
+    position: absolute;
+    width: var(--sticker);
+    height: var(--sticker);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.datum{
+    top: 1rem;
+    left: 1rem;
+    background-color: var(--wit);
+    color: var(--donker);
+    font-size: 1.5rem;
+}
+.prijs{
+    top: 4rem;
+    left: 3rem;
+    background-color: var(--geel);
+    border-radius: 50%;
+    font-size: 2rem;
+    z-index: 1000;
+    color: var(--donker);
+}
+.logo{
+    top: 6rem;
+    left: 6.5rem;
+    background-color: var(--donker);
+    font-size: 2rem;
+}
+.uitverkocht{
+    top: 9rem;
+    left: 9rem;
+    background-color: var(--rood);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    z-index: 1000;
+    color: var(--wit);
+}
+
+
+
+}
+@media(min-width:800px){
+    .logo{
+        bottom: 2rem;
+        right: 2rem;
+    }
+}
+
 
 /* === media queries: below the base rules === */
