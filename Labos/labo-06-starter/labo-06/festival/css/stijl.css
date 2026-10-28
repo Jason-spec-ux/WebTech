@@ -1,0 +1,143 @@
+/* stijl.css - labo 6, festival (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+  --papier: #fff8ee;
+  --inkt: #1a1a1a;
+  --gedempt: #6b6b6b;
+  --accent: #d6341c;
+  --accent-tekst: #fff;
+  --lijn: #e3d9c8;
+
+  --font-tekst: Verdana, sans-serif;
+  --font-kop: Georgia, serif;
+}
+
+/* === base: narrow screens first === */
+@media(min-width:400px){
+    body{
+        margin: 0;
+        box-sizing: border-box;
+        background-color: var(--papier);
+        font-family: var(--font-tekst);
+        min-height: 100vh;
+    }
+    h1{
+        font-family: var(--font-kop);
+        font-size: clamp(2rem, calc(5vw + 1rem), 4rem);
+        line-height: 1.1;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo{
+        font-size: 2rem;
+        color: var(--accent);
+        text-decoration: none;
+        gap: 1rem;
+        text-align: center;
+    }
+    nav{}
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+    }
+    nav ul li{
+        list-style: none;
+        padding: 0.75rem 1.25rem;
+        border: 2px solid var(--accent);
+        border-radius: 2rem;
+        background-color: transparent;
+        text-decoration: none;
+        color: var(--accent);
+        text-align: center;
+    }
+    nav ul li a{
+        color: var(--accent);
+        text-decoration: none;
+    }
+    nav ul li:active{
+        color: var(--accent-tekst);
+        background-color: var(--accent);
+    }
+     nav ul li a:active{
+        color: var(--accent-tekst);
+    }
+    main{
+        height: 65%;
+    }
+    .held{
+        padding-block: clamp(2rem,8vw,6rem);
+        padding-inline: clamp(1rem,5vw,4rem);
+        background-color: var(--accent);
+        color: var(--accent-tekst);
+    }
+
+    .programma{
+       padding: 1rem;
+       margin: 0;
+        
+    }
+
+    .programma li{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 100%;
+        list-style: none;
+        padding: 1rem;
+        border-bottom: 2px solid var(--lijn);
+    }
+    h2{
+        padding-left: 2rem;
+        padding-top: 1rem;
+    }
+    .programma strong{
+        font-weight: bold;
+
+    }
+    .programma time{
+        color: var(--accent);
+
+    }
+    .programma span{
+        color: var(--gedempt);
+        margin-left: auto;
+    }
+    footer{
+        text-align: center;
+        color: var(--gedempt);
+        font-size: 0.875rem;
+        padding: 1.5rem 1rem;
+        bottom: 0;
+        width: 100%;
+    }
+}
+@media(min-width:800px){
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 0;
+    }
+}
+@media(min-width:1200px){
+   header{
+        display: flex;
+        flex-direction: row;
+        padding: 1.5rem 3rem 1rem 3rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+}
+
+
+
+/* === media queries: below the base rules === */

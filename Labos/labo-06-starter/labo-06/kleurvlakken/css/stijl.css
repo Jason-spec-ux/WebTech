@@ -1,0 +1,63 @@
+/* stijl.css - labo 6, kleurvlakken (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+    --rood: #b90020;
+    --groen: #349803;
+    --geel: #ffcd00;
+    --blauw: #006aff;
+
+}
+
+/* === base: narrow screens first === */
+
+@media (min-width: 400px) {
+  body {
+  
+  }
+  main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .vlak{
+        height: 25%;
+  }
+    .vlak.rood{
+        background-color: var(--rood);
+    }
+     .vlak.groen{
+        background-color: var(--groen);
+    }
+     .vlak.geel{
+        background-color: var(--geel);
+    }
+     .vlak.blauw{
+        background-color: var(--blauw);
+    }
+}
+@media (min-width: 600px) {
+  main{
+    display: flex;
+    flex-direction: row;
+  }
+   .vlak{
+        width: 25%;
+        height: 100%;
+  }
+}
+@media(min-width: 800px)
+{
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+     .vlak{
+        width: 50%;
+        height: 50%;
+  }
+}
+
+
+/* === media queries: below the base rules === */
