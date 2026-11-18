@@ -1,0 +1,109 @@
+/* stijl.css - labo 7, tintenladder (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+  /* kleur */
+  --paper: hsl(40 30% 97%);
+  --ink: hsl(210 25% 12%);
+  --muted: hsl(210 10% 42%);
+  --hue: 210;
+
+  /* banden: 10 stappen van L 95% tot 5% */
+  --band-1:  hsl(var(--hue) 55% 95%);
+  --band-2:  hsl(var(--hue) 55% 85%);
+  --band-3:  hsl(var(--hue) 55% 75%);
+  --band-4:  hsl(var(--hue) 55% 65%);
+  --band-5:  hsl(var(--hue) 55% 55%);
+  --band-6:  hsl(var(--hue) 55% 45%);
+  --band-7:  hsl(var(--hue) 55% 35%);
+  --band-8:  hsl(var(--hue) 55% 25%);
+  --band-9:  hsl(var(--hue) 55% 15%);
+  --band-10: hsl(var(--hue) 55% 5%);
+
+  /* kop */
+  --heading-font: Georgia, serif;
+  --heading-size: 1.5rem;
+  --heading-leading: 1.2;
+
+  /* regel eronder */
+  --sub-color: var(--muted);
+  --sub-size: 0.875rem;
+
+  /* label */
+  --label-font: Verdana, sans-serif;
+  --label-size: 0.875rem;
+  --label-weight: 700;
+  --label-pad-left: 1rem;
+  --label-color: var(--ink);       /* band 1–5 */
+  --label-color-inverse: var(--paper); /* band 6–10 */
+
+  /* ruimte */
+  --pad: 2rem;
+}
+
+/* === base === */
+
+
+/* === the ten steps: one rule per step === */
+body{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--paper);
+    padding: 1rem 1rem 1rem 0.5rem;
+    gap: 1rem;
+}
+header p{
+    color: var(--sub-color);
+    font-size: var(--sub-size);
+}
+.ladder{
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+}
+.trede{
+    font-weight: var(--label-weight);
+    font-size: var(--label-size);
+    padding: var(--label-pad-left);
+    color: var(--label-color);
+    font-family: var(--label-font);
+}
+.trede:nth-child(1){
+    background-color: hsl(var(--hue) 55% 95%);
+}
+.trede:nth-child(2){
+    background-color: hsl(var(--hue) 55% 85%);
+}
+.trede:nth-child(3){
+    background-color: hsl(var(--hue) 55% 75%);
+}
+.trede:nth-child(4){
+    background-color: hsl(var(--hue) 55% 65%);
+}
+.trede:nth-child(5){
+    background-color: hsl(var(--hue) 55% 55%);
+}
+.trede:nth-child(6),.trede:nth-child(7),.trede:nth-child(8),.trede:nth-child(9),.trede:nth-child(10){
+    color: var(--label-color-inverse);
+}
+.trede:nth-child(6){
+    background-color: hsl(var(--hue) 55% 45%);
+}
+.trede:nth-child(7){
+    background-color: hsl(var(--hue) 55% 35%);
+}
+.trede:nth-child(8){
+    background-color: hsl(var(--hue) 55% 25%);
+}
+.trede:nth-child(9){
+    background-color: hsl(var(--hue) 55% 15%);
+}
+.trede:nth-child(10){
+    background-color: hsl(var(--hue) 55% 5%);
+}
