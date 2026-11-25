@@ -52,6 +52,7 @@ h1,h2,h3{
     display: grid;
     align-items: end;
     padding: clamp(1rem,5vw,4rem);
+
 }
 .paneel{
     max-width: 36rem;
@@ -84,6 +85,7 @@ h1,h2,h3{
 .knop:hover{
     background-color: white;
     color: var(--accent);
+
 }
 main{
     display: flex;
