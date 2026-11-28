@@ -5,11 +5,9 @@ body{
     padding: 0;
     margin: 0;
     background-color: black;
-    background: url(images/Flag_of_the_United_States.svg.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: loop 5s linear infinite, rainbow 1s linear infinite;
 }
 main{
     display: flex;
@@ -24,9 +22,7 @@ main{
 }
 div{
     padding: 5rem;
-    border-radius: 50%;
     position: absolute;
-    background: url(images/image.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,61 +30,15 @@ div{
 div:nth-child(1){
     background-color: gray;
     animation: loop 5s linear infinite, rainbow 1s linear infinite;
-    padding: 6rem;
 }
-div:nth-child(2){
-    background-color: green;
-    animation: loop 5s linear infinite, rainbow 1s linear infinite;
-    animation-delay: 0.3s;
-}
-div:nth-child(3){
-    background-color: black;
-    animation: loop 5s linear infinite, rainbow 1s linear infinite;
-    animation-delay: 0.6s;
-}
-div:nth-child(4){
-        background-color: black;
 
-    animation: loop 5s linear infinite, rainbow 1s linear infinite;
-    animation-delay: 0.9s;
-}
-div:nth-child(5){
-    background-color: black;
-    animation: loop 5s linear infinite, rainbow 1s linear infinite;
-    animation-delay: 1.2s;
-}
-div:nth-child(6){
-    background-color: black;
-    animation: loop 5s linear infinite, rainbow 1s linear infinite;
-    animation-delay: 1.5s;
-}
-div:nth-child(7){
-    background-color: black;
-    animation: loop 5s linear infinite, rainbow 1s linear infinite;
-    animation-delay: 1.8s;
-}
-div:nth-child(8){
-    background-color: black;
-    animation: loop 5s linear infinite, rainbow 1s linear infinite;
-    animation-delay: 2.1s;
-}
-div:nth-child(9){
-    background-color: black;
-    animation: loop 5s linear infinite, rainbow 1s linear infinite;
-    animation-delay: 2.4s;
-}
-div:nth-child(10){
-    background-color: black;
-    animation: loop 5s linear infinite, rainbow 1s linear infinite;
-    animation-delay: 2.7s;
-}
 
 
 @keyframes loop {
     0% {transform:translate(0,0)}
     25% {transform:translate(0,40rem)}
-    50% {transform:translate(40rem,40rem)}
-    75% {transform:translate(40rem,0)}
+    50% {transform:translate(70rem,70rem)}
+    75% {transform:translate(70rem,0)}
     100% {transform:translateY(0)}
 }
 @keyframes rainbow{

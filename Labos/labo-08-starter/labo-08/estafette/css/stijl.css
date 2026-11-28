@@ -1,0 +1,62 @@
+/* stijl.css - labo 8, estafette (reset.css is linked before this file) */
+
+/* === tokens: colours, one duration, one curve and the time between two runners === */
+/* === tokens === */
+:root {
+  --wit: hsl(0 0% 100%);
+  --loper-1: hsl(165 34% 47%);
+  --loper-2: hsl(152 36% 57%);
+  --loper-3: hsl(187 44% 62%);
+  --loper-4: hsl(192 45% 77%);
+
+  --duur: 2s;
+  --curve: ease-in-out;
+  --wissel: 250ms;
+}
+
+/* === four lanes that fill the window === */
+body{
+    min-height: 100vh;
+}
+.baan{
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.loper{
+    background-color: var(--loper-1);
+    min-height: 50%;
+    width: 20%;
+    padding: 4.91rem;
+}
+.loper:nth-child(1){
+    background-color: var(--loper-1);
+    animation: move 2s infinite;
+}
+.loper:nth-child(2){
+    background-color: var(--loper-2);
+    animation: move 2s infinite;
+    animation-delay: calc(var(--wissel)*2);
+
+}
+.loper:nth-child(3){
+    background-color: var(--loper-3);
+    animation: move 2s infinite;
+    animation-delay: calc(var(--wissel)*3);
+
+}
+.loper:nth-child(4){
+    background-color: var(--loper-4);
+    animation: move 2s infinite;
+    animation-delay: calc(var(--wissel)*4);
+
+}
+/* === the runners: one animation, there and back; each one starts a little later (8.4) === */
+
+/* === keyframes: only the way there === */
+@keyframes move {
+    0%,100% {transform:translate(0,0)}
+    50%{transform:translate(64rem,0)}}
+
+/* === reduced motion (8.5) === */
